@@ -3,6 +3,7 @@ from setuptools import setup, find_packages
 setup(
     name='git-rebase-helper',
     version='0.2', 
+    description='A command line tool to simplify Git rebasing tasks.',
     packages=find_packages(),
     install_requires=[
         'click',
@@ -14,10 +15,7 @@ setup(
             'git-rebase-helper = git_rebase_helper.cli:cli',
         ],
     },
-    long_description="""# git-rebase-helper
-
-# git-rebase-helper
-
+    long_description="""
 `git-rebase-helper` is a command-line tool designed to simplify Git rebasing tasks. It offers an easy way to manage and automate Git rebase processes, visualize commit histories, simulate rebases, and resolve conflicts during rebasing. This tool is perfect for developers looking for a smoother Git workflow when dealing with rebases.
 
 ## Features:
@@ -79,4 +77,8 @@ git-rebase-helper resolve
 ```
     """,
     long_description_content_type='text/markdown',
+
+    project_urls={
+        'Repository': 'https://github.com/andoriyaprashant/git_rebase_helper',
+    },
 )
