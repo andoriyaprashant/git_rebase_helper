@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='git-rebase-helper',
-    version='0.2', 
+    version='0.3', 
     description='A command line tool to simplify Git rebasing tasks.',
     packages=find_packages(),
     install_requires=[
